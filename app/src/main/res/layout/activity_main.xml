@@ -1,0 +1,272 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <ImageView
+        android:id="@+id/imagemSupermanCapa"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:scaleType="centerCrop"
+        app:layout_constraintEnd_toEndOf="@id/main"
+        app:layout_constraintHeight_percent="0.4"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@id/main"
+        app:layout_constraintTop_toTopOf="@id/main"
+        app:srcCompat="@drawable/supermancapa" />
+
+    <ImageView
+        android:id="@+id/imagemNetflixLogo"
+        android:layout_width="50dp"
+        android:layout_height="60dp"
+
+        app:layout_constraintBottom_toTopOf="@+id/guideline1"
+        app:layout_constraintEnd_toStartOf="@+id/textViewMenuSeries"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/guideline3"
+        app:srcCompat="@drawable/logo" />
+
+    <TextView
+        android:id="@+id/textViewMenuLista"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/minha_lista"
+        android:textColor="@color/menunavegacao"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="@+id/textViewMenuFilmes"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/textViewMenuFilmes"
+        app:layout_constraintTop_toTopOf="@+id/textViewMenuFilmes" />
+
+    <TextView
+        android:id="@+id/textViewMenuFilmes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/filmes"
+        android:textColor="@color/menunavegacao"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="@+id/textViewMenuSeries"
+        app:layout_constraintEnd_toStartOf="@+id/textViewMenuLista"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/textViewMenuSeries"
+        app:layout_constraintTop_toTopOf="@+id/textViewMenuSeries" />
+
+    <TextView
+        android:id="@+id/textViewMenuSeries"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/s_ries"
+        android:textColor="@color/menunavegacao"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="@+id/imagemNetflixLogo"
+        app:layout_constraintEnd_toStartOf="@+id/textViewMenuFilmes"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/imagemNetflixLogo"
+        app:layout_constraintTop_toTopOf="@+id/imagemNetflixLogo" />
+
+
+    <ImageView
+        android:id="@+id/imagemSuperman"
+        android:layout_width="180dp"
+        android:layout_height="50dp"
+        app:layout_constraintBottom_toBottomOf="@id/guideline2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/guideline1"
+        app:srcCompat="@drawable/supermanlogo"
+
+
+        />
+
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.09" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.20" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.02" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/linhaGuiaEsquerda"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.05" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/linhaGuiaDireita"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.95" />
+
+
+    <TextView
+        android:id="@+id/textViewSuperHeroi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:textSize="14sp"
+        android:text="@string/super_heroi"
+        android:textColor="@color/palavraschaves"
+        app:layout_constraintEnd_toStartOf="@+id/textViewFamilia"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/textViewAcao"
+        app:layout_constraintTop_toBottomOf="@id/guideline2" />
+
+    <TextView
+        android:id="@+id/textViewFamilia"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="17dp"
+        android:text="@string/fam_lia"
+        android:textSize="14sp"
+        android:textColor="@color/palavraschaves"
+        app:layout_constraintBottom_toBottomOf="@id/textViewSuperHeroi"
+        app:layout_constraintEnd_toEndOf="@id/linhaGuiaDireita"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/textViewSuperHeroi"
+        app:layout_constraintTop_toTopOf="@id/textViewSuperHeroi"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/textViewAcao"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="17dp"
+        android:text="@string/a_o"
+        android:textSize="14sp"
+        android:textColor="@color/palavraschaves"
+        app:layout_constraintBottom_toBottomOf="@id/textViewSuperHeroi"
+        app:layout_constraintEnd_toStartOf="@+id/textViewSuperHeroi"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="@id/linhaGuiaEsquerda"
+        app:layout_constraintTop_toTopOf="@id/textViewSuperHeroi"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/botaoAssistir"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="13dp"
+        android:drawableLeft="@drawable/ic_executer"
+        android:text="@string/assistir"
+        app:layout_constraintBottom_toBottomOf="@+id/imagemSupermanCapa"
+        app:layout_constraintEnd_toStartOf="@+id/botaoDetalhes"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/botaoMinhaLista" />
+
+    <Button
+        android:id="@+id/botaoMinhaLista"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/transparent"
+        android:drawableTop="@drawable/ic_adicionar"
+        android:padding="0dp"
+        android:text="@string/add_minha_lista"
+        android:textSize="14sp"
+        android:textColor="@color/menunavegacao"
+        app:iconSize="8sp"
+        app:layout_constraintBottom_toBottomOf="@+id/botaoAssistir"
+        app:layout_constraintEnd_toStartOf="@+id/botaoAssistir"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="@+id/linhaGuiaEsquerda"
+        app:layout_constraintTop_toTopOf="@+id/botaoAssistir" />
+
+    <Button
+        android:id="@+id/botaoDetalhes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/transparent"
+        android:drawableTop="@drawable/ic_informacao"
+        android:padding="0dp"
+        android:text="@string/detalhes"
+        android:textSize="14sp"
+        android:textColor="@color/menunavegacao"
+        app:iconSize="8sp"
+        app:layout_constraintBottom_toBottomOf="@+id/botaoAssistir"
+        app:layout_constraintEnd_toStartOf="@+id/linhaGuiaDireita"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/botaoAssistir"
+        app:layout_constraintTop_toTopOf="@+id/botaoAssistir" />
+
+    <TextView
+        android:id="@+id/textViewLancamentos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:text="@string/lan_amentos"
+        android:textColor="@color/menunavegacao"
+        app:layout_constraintStart_toStartOf="@+id/linhaGuiaEsquerda"
+        app:layout_constraintTop_toBottomOf="@+id/imagemSupermanCapa"
+        android:textSize="14sp"/>
+
+    <ImageView
+        android:id="@+id/imagemFilme1"
+        android:layout_width="120dp"
+        android:layout_height="70dp"
+        app:layout_constraintBottom_toBottomOf="@+id/imagemFilme2"
+        app:layout_constraintEnd_toStartOf="@+id/linhaGuiaDireita"
+        app:layout_constraintTop_toTopOf="@+id/imagemFilme2"
+        app:srcCompat="@drawable/besouroazul" />
+
+    <ImageView
+        android:id="@+id/imagemFilme2"
+        android:layout_width="120dp"
+        android:layout_height="70dp"
+
+        app:layout_constraintEnd_toStartOf="@+id/imagemFilme1"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/imagemFilme3"
+        app:layout_constraintTop_toBottomOf="@+id/textViewLancamentos"
+        app:srcCompat="@drawable/esquadraosuicida"
+        android:layout_marginTop="10dp"/>
+
+    <ImageView
+        android:id="@+id/imagemFilme3"
+        android:layout_width="120dp"
+        android:layout_height="70dp"
+
+        app:layout_constraintBottom_toBottomOf="@+id/imagemFilme2"
+        app:layout_constraintStart_toStartOf="@+id/linhaGuiaEsquerda"
+        app:layout_constraintTop_toTopOf="@+id/imagemFilme2"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/ligadajustica" />
+
+    <TextView
+        android:id="@+id/textViewNomeAluno"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="68dp"
+        android:text="Lara Walcher de Andrade"
+        android:textColor="@color/branco"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toStartOf="@+id/linhaGuiaDireita"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="@+id/linhaGuiaEsquerda"
+        app:layout_constraintTop_toBottomOf="@+id/imagemFilme2" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
